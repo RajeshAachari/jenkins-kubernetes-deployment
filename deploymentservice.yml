@@ -23,15 +23,15 @@ spec:
 
 ---
 apiVersion: v1
-kind: service
+kind: service1
 metadata:
-  name: service
+  name: service1
 spec:
   selector:
     app: my-node-app
-  type: LoadBalancer
+  type: NodePort
   ports:
   - protocol: TCP
-    port: 5000
+    port: 5001
     targetPort: 3000
-    nodePort: 31110
+    nodePort: 31111
