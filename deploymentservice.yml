@@ -23,9 +23,9 @@ spec:
 
 ---
 apiVersion: v1
-kind: myapp
+kind: myserver
 metadata:
-  name: myapp
+  name: myserver
 spec:
   selector:
     app: my-node-app
