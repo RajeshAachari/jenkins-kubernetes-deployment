@@ -1,7 +1,7 @@
 pipeline {
 
   environment {
-    dockerimagename = "rajeshaachari/my-node-app1"
+    dockerimagename = "rajeshaachari/my-node-app"
     dockerImage = ""
   }
 
