@@ -5,7 +5,7 @@ metadata:
   labels:
     app: my-node-app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: my-node-app
@@ -23,9 +23,9 @@ spec:
 
 ---
 apiVersion: v1
-kind: myserver
+kind: service
 metadata:
-  name: myserver
+  name: service
 spec:
   selector:
     app: my-node-app
@@ -34,4 +34,4 @@ spec:
   - protocol: TCP
     port: 5000
     targetPort: 3000
-    nodePort: 31111
+    nodePort: 31110
